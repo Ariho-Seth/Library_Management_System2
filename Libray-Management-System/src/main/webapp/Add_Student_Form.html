@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="scripts/script.js"></script>
+  </head>
+  <body>
+    <div class="demo-page">
+      <main class="demo-page-content">
+        <section>
+          <div class="href-target" id="input-types"></div>
+          <h1>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-align-justify"
+            >
+              <line x1="21" y1="10" x2="3" y2="10" />
+              <line x1="21" y1="6" x2="3" y2="6" />
+              <line x1="21" y1="14" x2="3" y2="14" />
+              <line x1="21" y1="18" x2="3" y2="18" />
+            </svg>
+            My Library Center
+          </h1>
+          <p>Add student infomation</p>
+          <form action="Student_ManagerController" method="GET">
+            <input type="hidden" name="command" value="ADD" />
+            <div class="nice-form-group">
+              <label>Registration Number</label>
+              <input type="text" name="regNumber" />
+            </div>
+            <div class="row">
+            <div class="nice-form-group col-3">
+              <label>First Name</label>
+              <input type="text" name="firstName" />
+            </div>
+
+            <div class="nice-form-group col-3">
+              <label>Other names</label>
+              <input type="text" name="otherNames" />
+            </div>
+		    </div>
+		 <div class="row">
+            <div class="nice-form-group col-4">
+              <label>Level</label>
+              <select id="theLevel">
+                <option value="advanced">A</option>
+                <option value="ordinary">O</option>
+              </select>
+            </div>
+
+            <div class="nice-form-group col-4">
+              <label>Class</label>
+              <select id="theClass"></select>
+            </div>
+
+            <div class="nice-form-group col-4">
+              <label>Stream</label>
+              <input type="text" name="stream" />
+            </div>
+			<div class="nice-form-group col-6">
+				<label>Sex</label>
+				<select id="theGender">
+				  <option value="female">F</option>
+				  <option value="male">M</option>
+				</select>
+			  </div>
+		</div>
+            <hr class="mt-2">
+			<p>Add Book infomation</p>
+			<div class="row">
+            <div class="nice-form-group col-2">
+              <label>Book Title</label>
+              <input type="text" name="bookTitle" />
+            </div>
+            <div class="nice-form-group ">
+              <label>Issued Out</label>
+              <input type="date" name="issueOut" />
+            </div>
+           </div>
+            
+          
+          <details>
+            <summary class="row">
+              <div class="toggle-code">
+				<input class="toggle-code" type="submit" value="save" />
+              </div>
+			  <a href="Student_ManagerController">Back to List</a>
+            </summary>
+           
+          </details>
+		</form>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

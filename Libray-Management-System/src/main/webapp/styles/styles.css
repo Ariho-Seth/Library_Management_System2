@@ -853,7 +853,7 @@ body {
 }
 @media only screen and (min-width: 750px) {
   .demo-page .demo-page-content {
-    width: calc(100% - 18em);
+    width: calc(100% - 5em);
   }
 }
 footer {
@@ -994,4 +994,31 @@ details summary::marker {
 }
 details summary::-webkit-details-marker {
   display: none;
+}
+main{
+  margin:0 auto;
+}
+
+.row{
+  display: flex;
+  justify-content:space-between;
+}
+.col-1{
+ width:100%;
+}
+.col-2{
+  width:70%;
+}
+.col-3{
+  width:45%;
+
+}
+.col-4{
+  width:20%;
+}
+.col-6{
+  width:10%;
+}
+.mt-2{
+  margin-top:2rem;
 }
